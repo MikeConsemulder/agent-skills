@@ -6,8 +6,8 @@
     "name": "Mike Consemulder",
     "url": "https://github.com/MikeConsemulder"
   },
-  "homepage": "https://github.com/MikeConsemulder/po-skills",
-  "repository": "https://github.com/MikeConsemulder/po-skills",
+  "homepage": "https://github.com/MikeConsemulder/agent-skills",
+  "repository": "https://github.com/MikeConsemulder/agent-skills",
   "license": "MIT",
   "keywords": ["product-owner", "product-management", "discovery", "prd", "user-stories", "definition-of-ready"]
 }

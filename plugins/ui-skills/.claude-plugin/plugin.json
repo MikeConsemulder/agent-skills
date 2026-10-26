@@ -1,0 +1,13 @@
+{
+  "name": "ui-skills",
+  "version": "1.0.0",
+  "description": "UI design agent skills beyond the happy path: design tokens, UI discovery, 5-state grilling, token-locked drafting and Nielsen/WCAG review.",
+  "author": {
+    "name": "Mike Consemulder",
+    "url": "https://github.com/MikeConsemulder"
+  },
+  "homepage": "https://github.com/MikeConsemulder/agent-skills",
+  "repository": "https://github.com/MikeConsemulder/agent-skills",
+  "license": "MIT",
+  "keywords": ["ui", "ux", "design-system", "design-tokens", "accessibility", "wcag", "usability", "tailwind"]
+}
