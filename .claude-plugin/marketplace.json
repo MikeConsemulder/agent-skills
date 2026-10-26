@@ -5,14 +5,20 @@
     "url": "https://github.com/MikeConsemulder"
   },
   "metadata": {
-    "description": "Production-grade agent skills for Product Owners in Claude Code. Discovery, Grilling, PRD Drafting & DoR Linting."
+    "description": "Production-grade agent skills for Product Owners and UI designers in Claude Code. Problem first, every state designed, mechanical checks enforced by scripts."
   },
   "plugins": [
     {
       "name": "po-skills",
-      "description": "Rigorous Product Management agent skills (inspired by Cagan, Torres, Vo & Pocock)",
+      "description": "Rigorous Product Management agent skills: Discovery, Grilling, PRD drafting and DoR linting (inspired by Cagan, Torres, Vo & Pocock).",
       "version": "1.0.0",
-      "source": "./"
+      "source": "./plugins/po-skills"
+    },
+    {
+      "name": "ui-skills",
+      "description": "UI design agent skills beyond the happy path: design tokens, UI discovery, 5-state grilling, token-locked drafting and heuristic/WCAG review (inspired by Frost, Nielsen, Hurff & Singer).",
+      "version": "1.0.0",
+      "source": "./plugins/ui-skills"
     }
   ]
 }
