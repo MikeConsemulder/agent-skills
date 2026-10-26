@@ -1,0 +1,13 @@
+{
+  "name": "po-skills",
+  "version": "1.0.0",
+  "description": "Production-grade agent skills for Product Owners: Discovery, Grilling, PRD drafting and DoR linting.",
+  "author": {
+    "name": "Mike Consemulder",
+    "url": "https://github.com/MikeConsemulder"
+  },
+  "homepage": "https://github.com/MikeConsemulder/po-skills",
+  "repository": "https://github.com/MikeConsemulder/po-skills",
+  "license": "MIT",
+  "keywords": ["product-owner", "product-management", "discovery", "prd", "user-stories", "definition-of-ready"]
+}
