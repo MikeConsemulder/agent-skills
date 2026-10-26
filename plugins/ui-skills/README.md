@@ -27,6 +27,4 @@ python3 skills/ui-review/scripts/check_contrast.py "#6B7280" "#FFFFFF"
 
 The agent reasons only about what needs judgement: visual hierarchy, cognitive load, flow and copy.
 
-```bash
-claude plugin install ui-skills@mikeconsemulder-marketplace
-```
+Works in any agent that loads `SKILL.md` skills; see the [root README](../../README.md#installation) for installation.

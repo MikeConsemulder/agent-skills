@@ -5,7 +5,7 @@
     "url": "https://github.com/MikeConsemulder"
   },
   "metadata": {
-    "description": "Production-grade agent skills for Product Owners and UI designers in Claude Code. Problem first, every state designed, mechanical checks enforced by scripts."
+    "description": "Production-grade agent skills for Product Owners and UI designers for any AI agent that supports SKILL.md. Problem first, every state designed, mechanical checks enforced by scripts."
   },
   "plugins": [
     {

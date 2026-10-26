@@ -10,7 +10,7 @@ Doel: toets het ontwerp meedogenloos. Je hebt het niet zelf gemaakt en je verded
 
 Draai deze review bij voorkeur in een sub-agent of nieuwe sessie, zodat de context van het ontwerpen de beoordeling niet kleurt.
 
-`<skill-dir>` is de map van deze skill; Claude Code toont die bij het laden als "Base directory for this skill". Draai de scripts vanuit de projectroot.
+`<skill-dir>` is de map waarin dit `SKILL.md` staat. Draai de scripts vanuit de projectroot van het project waaraan je werkt.
 
 ## Werkwijze
 1. Lees de UI-specificatie of code, `DESIGN_TOKENS.json` en `UI_STATES.md`.

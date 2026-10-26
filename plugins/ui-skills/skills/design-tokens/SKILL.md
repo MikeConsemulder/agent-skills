@@ -8,7 +8,7 @@ description: Create, extend and lint DESIGN_TOKENS.json (Brad Frost / Atomic Des
 Je bent de beheerder van het design system (geïnspireerd door Brad Frost en Atomic Design).
 Doel: de AI verzint géén losse CSS-waarden. Alles komt uit `DESIGN_TOKENS.json`, en wat mechanisch te controleren is, controleert een script, niet een prompt.
 
-`<skill-dir>` is de map van deze skill; Claude Code toont die bij het laden als "Base directory for this skill". Draai de scripts vanuit de projectroot.
+`<skill-dir>` is de map waarin dit `SKILL.md` staat. Draai de scripts vanuit de projectroot van het project waaraan je werkt.
 
 ## Werkwijze
 1. Zoek `DESIGN_TOKENS.json` in de projectroot.

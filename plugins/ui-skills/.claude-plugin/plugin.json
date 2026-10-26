@@ -6,8 +6,8 @@
     "name": "Mike Consemulder",
     "url": "https://github.com/MikeConsemulder"
   },
-  "homepage": "https://github.com/MikeConsemulder/claude-skills",
-  "repository": "https://github.com/MikeConsemulder/claude-skills",
+  "homepage": "https://github.com/MikeConsemulder/agent-skills",
+  "repository": "https://github.com/MikeConsemulder/agent-skills",
   "license": "MIT",
   "keywords": ["ui", "ux", "design-system", "design-tokens", "accessibility", "wcag", "usability", "tailwind"]
 }

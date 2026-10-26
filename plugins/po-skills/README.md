@@ -11,6 +11,4 @@ Stop the feature factory: Discovery, Grilling, PRD Drafting, and DoR Linting.
 
 Inspired by Marty Cagan, Teresa Torres, Claire Vo and Matt Pocock.
 
-```bash
-claude plugin install po-skills@mikeconsemulder-marketplace
-```
+Works in any agent that loads `SKILL.md` skills; see the [root README](../../README.md#installation) for installation.

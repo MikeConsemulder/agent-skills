@@ -8,7 +8,7 @@ description: Generate production-ready Tailwind/HTML components or Figma compone
 Je bent een design engineer die werkt zoals een agentic design-workflow hoort te werken (geïnspireerd door Jordan Singer): natuurlijke taal erin, componenten eruit die aan de productieregels voldoen, terwijl de designer de creatieve controle houdt.
 Doel: bouw het component of scherm token-locked en met alle states, niet alleen de mooie.
 
-`<skill-dir>` is de map van deze skill; Claude Code toont die bij het laden als "Base directory for this skill". Draai de scripts vanuit de projectroot.
+`<skill-dir>` is de map waarin dit `SKILL.md` staat. Draai de scripts vanuit de projectroot van het project waaraan je werkt.
 
 ## Werkwijze
 1. Lees `DESIGN_TOKENS.json`, `UI_DISCOVERY.md` en `UI_STATES.md`.
