@@ -1,6 +1,6 @@
 # Agent Skills by Mike Consemulder (`agent-skills`)
 
-> Production-grade agent skills for Product Owners and UI designers. Problem first, every state designed, mechanical checks enforced by scripts.
+> Production-grade agent skills for Product Owners, UI designers and campaign makers. Problem first, every state designed, mechanical checks enforced by scripts.
 
 Every skill is a plain `SKILL.md` (Markdown with `name`/`description` frontmatter), the open Agent Skills format. They are not tied to one tool: use them in any AI agent that loads `SKILL.md` skills, or paste a skill's contents into any other agent as instructions. Helper scripts are dependency-free Python 3.
 
@@ -12,8 +12,9 @@ Built in the spirit of **Matt Pocock**'s agent skills for developers – progres
 | --- | --- | --- |
 | [`po-skills`](plugins/po-skills) | Product Owners | `po-discovery` → `po-grill` → `po-draft` → `po-review` |
 | [`ui-skills`](plugins/ui-skills) | UI/UX designers & design engineers | `design-tokens` → `ui-discovery` → `ui-grill` → `ui-draft` → `ui-review` |
+| [`campaign-skills`](plugins/campaign-skills) | Marketers & founders running ads (Dutch; copy in NL + EN) | `campaign-discovery` → `campaign-grill` → `campaign-measure` → `campaign-copy` → `campaign-visuals` → `campaign-rollout` → `campaign-review` |
 
-The two chain together: `po-skills` produces `DISCOVERY.md` and `PRD.md`/`STORIES.md`, which `ui-discovery` reads as input. All state lives in plain Markdown/JSON files in your project, so you can switch agents mid-flow.
+The packs chain together: `po-skills` produces `DISCOVERY.md` and `PRD.md`/`STORIES.md`, which `ui-discovery` reads as input; `campaign-skills` reuses the personas from `ui-discovery` and the `DESIGN_TOKENS.json` from `design-tokens`. All state lives in plain Markdown/JSON files in your project, so you can switch agents mid-flow.
 
 ## Installation
 
@@ -25,9 +26,10 @@ Copy the skill folders into the skills directory your agent reads (see its docs)
 git clone https://github.com/MikeConsemulder/agent-skills.git
 cp -r agent-skills/plugins/po-skills/skills/* <your-agent-skills-dir>/
 cp -r agent-skills/plugins/ui-skills/skills/* <your-agent-skills-dir>/
+cp -r agent-skills/plugins/campaign-skills/skills/* <your-agent-skills-dir>/
 ```
 
-Copy the `ui-skills` folders together: `ui-draft` and `ui-review` call the linter in `design-tokens`.
+Copy each pack's folders together: skills call scripts in their sibling folders (`ui-draft` and `ui-review` use the linter in `design-tokens`; `campaign-review` runs the scripts of the other campaign skills; `campaign-visuals` also uses `design-tokens`).
 
 ### Agents without skill support
 
@@ -41,6 +43,7 @@ This repo also ships `.claude-plugin` manifests, so Claude Code can install the 
 claude plugin marketplace add MikeConsemulder/agent-skills
 claude plugin install po-skills@mikeconsemulder-marketplace
 claude plugin install ui-skills@mikeconsemulder-marketplace
+claude plugin install campaign-skills@mikeconsemulder-marketplace
 ```
 
 ## Credits & Inspirations
@@ -52,6 +55,14 @@ claude plugin install ui-skills@mikeconsemulder-marketplace
 - **Jakob Nielsen** (Nielsen Norman Group) – 10 Usability Heuristics.
 - **Scott Hurff** (*Designing Products People Love*) – the 5 UI states.
 - **Jordan Singer** (Diagram / Figma AI) – agentic design workflows.
+- **April Dunford** (*Obviously Awesome*) – positioning.
+- **Byron Sharp & Jenni Romaniuk** (Ehrenberg-Bass, *How Brands Grow*) – category entry points and distinctive brand assets.
+- **Les Binet & Peter Field** (*The Long and the Short of It*) – brand vs. activation budget and phasing.
+- **Gary Klein** – the pre-mortem.
+- **Avinash Kaushik** – See-Think-Do-Care and measurement plans.
+- **Eugene Schwartz** (*Breakthrough Advertising*) – levels of awareness.
+- **Josef Müller-Brockmann** (*Grid Systems*) – grid-based typography.
+- **HyperFrames** (HeyGen) – HTML + GSAP to video, the rendering engine behind `campaign-visuals`.
 
 ## Repository layout
 
@@ -59,6 +70,7 @@ claude plugin install ui-skills@mikeconsemulder-marketplace
 plugins/
   po-skills/skills/<skill>/SKILL.md          the skills (tool-agnostic)
   ui-skills/skills/<skill>/SKILL.md (+ scripts/, assets/)
+  campaign-skills/skills/<skill>/SKILL.md (+ scripts/, assets/)
   */.claude-plugin/plugin.json               Claude Code adapter
 .claude-plugin/marketplace.json              Claude Code adapter
 ```

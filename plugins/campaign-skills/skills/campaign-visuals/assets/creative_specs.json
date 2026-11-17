@@ -1,0 +1,16 @@
+{
+  "_toelichting": "Formaten per placement. safe_zone = marge in pixels (op de opgegeven breedte x hoogte) waar geen tekst, logo of CTA mag staan omdat de interface van het platform eroverheen valt. Waarden zijn richtlijnen: platforms wijzigen hun interface, controleer de actuele specs en pas dit bestand aan.",
+  "min_lettergrootte_px_per_1080": 36,
+  "placements": {
+    "meta_feed_1x1":       { "breedte": 1080, "hoogte": 1080, "max_mb": 30,  "video_duur_s": [1, 60],  "safe_zone": { "boven": 0,   "onder": 0,   "links": 0,  "rechts": 0 } },
+    "meta_feed_4x5":       { "breedte": 1080, "hoogte": 1350, "max_mb": 30,  "video_duur_s": [1, 60],  "safe_zone": { "boven": 0,   "onder": 0,   "links": 0,  "rechts": 0 } },
+    "meta_stories_9x16":   { "breedte": 1080, "hoogte": 1920, "max_mb": 30,  "video_duur_s": [1, 60],  "safe_zone": { "boven": 270, "onder": 380, "links": 65, "rechts": 65 } },
+    "meta_reels_9x16":     { "breedte": 1080, "hoogte": 1920, "max_mb": 4000, "video_duur_s": [3, 90], "safe_zone": { "boven": 270, "onder": 670, "links": 65, "rechts": 120 } },
+    "tiktok_9x16":         { "breedte": 1080, "hoogte": 1920, "max_mb": 500, "video_duur_s": [5, 60],  "safe_zone": { "boven": 150, "onder": 480, "links": 60, "rechts": 140 } },
+    "pinterest_2x3":       { "breedte": 1000, "hoogte": 1500, "max_mb": 20,  "video_duur_s": [4, 60],  "safe_zone": { "boven": 0,   "onder": 120, "links": 0,  "rechts": 0 } },
+    "linkedin_1x1":        { "breedte": 1200, "hoogte": 1200, "max_mb": 5,   "video_duur_s": [3, 60],  "safe_zone": { "boven": 0,   "onder": 0,   "links": 0,  "rechts": 0 } },
+    "linkedin_1.91x1":     { "breedte": 1200, "hoogte": 627,  "max_mb": 5,   "safe_zone": { "boven": 0, "onder": 0, "links": 0, "rechts": 0 } },
+    "youtube_shorts_9x16": { "breedte": 1080, "hoogte": 1920, "max_mb": 256000, "video_duur_s": [5, 60], "safe_zone": { "boven": 200, "onder": 500, "links": 60, "rechts": 160 } },
+    "email_header":        { "breedte": 1200, "hoogte": 600,  "max_mb": 1,   "safe_zone": { "boven": 0, "onder": 0, "links": 0, "rechts": 0 } }
+  }
+}

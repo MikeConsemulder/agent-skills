@@ -5,7 +5,7 @@
     "url": "https://github.com/MikeConsemulder"
   },
   "metadata": {
-    "description": "Production-grade agent skills for Product Owners and UI designers for any AI agent that supports SKILL.md. Problem first, every state designed, mechanical checks enforced by scripts."
+    "description": "Production-grade agent skills for Product Owners, UI designers and campaign makers, for any AI agent that supports SKILL.md. Problem first, every state designed, mechanical checks enforced by scripts."
   },
   "plugins": [
     {
@@ -19,6 +19,12 @@
       "description": "UI design agent skills beyond the happy path: design tokens, UI discovery, 5-state grilling, token-locked drafting and heuristic/WCAG review (inspired by Frost, Nielsen, Hurff & Singer).",
       "version": "1.0.0",
       "source": "./plugins/ui-skills"
+    },
+    {
+      "name": "campaign-skills",
+      "description": "Ad and social campaign skills from A to Z: positioning, pre-mortem, measurement plan, bilingual copy (NL/EN), HyperFrames visuals, rollout calendar and review (inspired by Dunford, Sharp, Binet & Field, Klein, Kaushik, Schwartz & Müller-Brockmann).",
+      "version": "1.0.0",
+      "source": "./plugins/campaign-skills"
     }
   ]
 }

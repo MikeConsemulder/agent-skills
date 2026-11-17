@@ -1,0 +1,19 @@
+{
+  "_toelichting": "Tekenlimieten per kanaal en veld. 'max' is een harde limiet (fout), 'advies' is wat zichtbaar blijft zonder 'meer' (waarschuwing). Platforms wijzigen dit regelmatig: controleer de actuele specs en pas dit bestand aan.",
+  "limieten": {
+    "meta":       { "primary_text": { "advies": 125, "max": 2200 }, "headline": { "advies": 40, "max": 255 }, "description": { "advies": 30, "max": 255 } },
+    "instagram":  { "caption": { "advies": 125, "max": 2200 } },
+    "tiktok":     { "ad_text": { "max": 100 }, "caption": { "advies": 150, "max": 4000 } },
+    "google_ads": { "headline": { "max": 30 }, "long_headline": { "max": 90 }, "description": { "max": 90 }, "path": { "max": 15 } },
+    "linkedin":   { "intro_text": { "advies": 150, "max": 600 }, "headline": { "advies": 70, "max": 200 } },
+    "pinterest":  { "title": { "advies": 40, "max": 100 }, "description": { "advies": 50, "max": 500 } },
+    "x":          { "post": { "max": 280 } },
+    "email":      { "subject": { "advies": 50, "max": 150 }, "preheader": { "advies": 90, "max": 150 } }
+  },
+  "claims": {
+    "nl": ["gratis", "beste", "goedkoopste", "nummer 1", "nr. 1", "100%", "garantie", "gegarandeerd", "duurzaam", "klimaatneutraal", "co2-neutraal", "milieuvriendelijk", "laatste kans", "alleen vandaag", "op = op", "uitverkocht"],
+    "en": ["free", "best", "cheapest", "number one", "#1", "100%", "guarantee", "guaranteed", "sustainable", "carbon neutral", "climate neutral", "eco-friendly", "last chance", "today only", "while stocks last", "sold out"]
+  },
+  "max_uitroeptekens": 1,
+  "max_hoofdletter_aandeel": 0.3
+}

@@ -1,0 +1,13 @@
+{
+  "name": "campaign-skills",
+  "version": "1.0.0",
+  "description": "Agent-skills voor advertentie- en socialcampagnes van A tot Z: positionering, pre-mortem, meetplan, tweetalige copy, HyperFrames-visuals, rollout-kalender en review.",
+  "author": {
+    "name": "Mike Consemulder",
+    "url": "https://github.com/MikeConsemulder"
+  },
+  "homepage": "https://github.com/MikeConsemulder/agent-skills",
+  "repository": "https://github.com/MikeConsemulder/agent-skills",
+  "license": "MIT",
+  "keywords": ["marketing", "advertising", "social-media", "campaign", "copywriting", "utm", "hyperframes", "video"]
+}
